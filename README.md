@@ -1,6 +1,7 @@
 # To-Do List CLI 📋
 
-![Python](https://img.shields.io/badge/Python-3.8%2B-blue?style=for-the-badge&logo=python) ![Rich](https://img.shields.io/badge/rich-4.0.0%2B-brightgreen?style=for-the-badge) ![GitHub](https://img.shields.io/badge/GitHub-black?style=for-the-badge&logo=github)
+![Python](https://img.shields.io/badge/Python-3.8%2B-blue?style=for-the-badge&logo=python) ![Rich](https://img.shields.io/badge/rich-4.0.0%2B-brightgreen?style=for-the-badge) [![GitHub](https://img.shields.io/badge/GitHub-black?style=for-the-badge&logo=github)](https://github.com/malii0/todo-cli)
+
 
 This project is a lightweight and stylish command-line to-do list application that you can easily manage through your terminal. It provides visually appealing and formatted output using the `rich` library. Your tasks are stored in a file named `todo_list.json`, ensuring your list persists across sessions.
 
@@ -19,7 +20,7 @@ To use this project, you first need to install the required library.
 
 1.  Clone or download the repository:
     ```bash
-    git clone [https://github.com/malii0/todo-cli.git](https://github.com/malii0/todo-cli.git)
+    git clone https://github.com/malii0/todo-cli.git
     cd todo-cli
     ```
 2.  Install the necessary Python library (`rich`):
