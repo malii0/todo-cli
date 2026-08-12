@@ -1,130 +1,112 @@
-# To-Do List CLI 📋
+# To-Do List CLI
 
-![Python](https://img.shields.io/badge/Python-3.8%2B-blue?style=for-the-badge&logo=python) ![Rich](https://img.shields.io/badge/rich-4.0.0%2B-brightgreen?style=for-the-badge) [![GitHub](https://img.shields.io/badge/GitHub-black?style=for-the-badge&logo=github)](https://github.com/malii0/todo-cli)
+[![Python](https://img.shields.io/badge/Python-3.8%2B-blue?style=for-the-badge&logo=python)](https://camo.githubusercontent.com/eaa7fd024f419ac84bc627229cb7db7fa962c98447531e7002468f00d569b491/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f507974686f6e2d332e382532422d626c75653f7374796c653d666f722d7468652d6261646765266c6f676f3d707974686f6e) [![Rich](https://img.shields.io/badge/rich-4.0.0%2B-brightgreen?style=for-the-badge)](https://camo.githubusercontent.com/9f43600b912a0a5c9c4d6f15337a594762204e8e9bf8ad6500a8f70ba60eaf52/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f726963682d342e302e302532422d627269676874677265656e3f7374796c653d666f722d7468652d6261646765) [![GitHub](https://img.shields.io/badge/GitHub-black?style=for-the-badge&logo=github)](https://github.com/malii0/todo-cli)
 
+A lightweight command-line to-do list app that runs entirely in your terminal. Output is formatted with the `rich` library, and tasks are saved to `todo_list.json` so they persist between sessions.
 
-This project is a lightweight and stylish command-line to-do list application that you can easily manage through your terminal. It provides visually appealing and formatted output using the `rich` library. Your tasks are stored in a file named `todo_list.json`, ensuring your list persists across sessions.
+## Features
 
-## ✨ Features
+- Add, remove, or complete multiple tasks with a single command
+- Tasks stored locally in JSON
+- Table view showing task ID, status, creation date, and completion date
+- Filter or search by completion status or keyword
+- Quickly duplicate an existing task
+- Command-line interface built on `argparse`
 
-* **Manage Multiple Tasks:** Add, remove, or complete multiple tasks with a single command.
-* **Persistent Data:** All tasks are stored locally in JSON format.
-* **Detailed List View:** Displays well-organized tables with task ID, status, creation date, and completion date.
-* **Filtering and Searching:** List tasks that are completed, pending, or contain a specific keyword.
-* **Repeating Tasks:** Quickly add multiple copies of an existing task.
-* **Easy to Use:** Intuitive and straightforward command-line interface powered by the `argparse` library.
+## Installation
 
-## ⚙️ Installation
+Clone the repository:
 
-To use this project, you first need to install the required library.
+```
+git clone https://github.com/malii0/todo-cli.git
+cd todo-cli
+```
 
-1.  Clone or download the repository:
-    ```bash
-    git clone https://github.com/malii0/todo-cli.git
-    cd todo-cli
-    ```
-2.  Install the necessary Python library (`rich`):
-    ```bash
-    pip install rich
-    ```
+Install the required library:
 
-## 💻 Usage
+```
+pip install rich
+```
 
-The main command for the application is `python todo.py`. You can see all available commands and their arguments using the `--help` flag.
+## Usage
 
-```bash
+Run `python todo.py --help` to see all available commands.
+
+```
 python todo.py --help
 ```
 
-### 💡 Examples
+### Examples
 
-#### Adding Tasks
+**Add tasks**
 
-Add one or more new tasks to your to-do list.
-
-```bash
+```
 python todo.py --add "Buy groceries"
 python todo.py --add "Read a book" "Do some exercise"
 ```
 
-#### Listing Tasks
+**List tasks**
 
-View all tasks in your to-do list.
-
-```bash
+```
 python todo.py --list
 ```
 
-#### Listing Tasks by Status
+**List by status**
 
-Show only the completed or pending tasks.
-
-```bash
+```
 python todo.py --list-completed
 python todo.py --list-pending
 ```
 
-#### Searching Tasks
+**Search**
 
-Find tasks that contain a specific term.
-
-```bash
+```
 python todo.py --search "milk"
 ```
 
-#### Completing Tasks
+**Complete tasks**
 
-Mark one or more tasks as completed by their ID.
-
-```bash
+```
 python todo.py --complete 1
 python todo.py --complete 2 4
 ```
 
-#### Marking Tasks as Pending
+**Mark as pending**
 
-Mark one or more completed tasks as pending by their ID.
-
-```bash
+```
 python todo.py --pending 3
 ```
 
-#### Removing Tasks
+**Remove tasks**
 
-Delete one or more tasks by their ID.
-
-```bash
+```
 python todo.py --remove 3
 ```
 
-#### Updating a Task Name
+**Rename a task**
 
-Change the name of a task by its ID.
-
-```bash
+```
 python todo.py --update 2 "Read a new science fiction novel"
 ```
 
-#### Repeating a Task
+**Duplicate a task**
 
-Add multiple copies of an existing task by its ID.
-
-```bash
+```
 python todo.py --repeat 6 3
 ```
 
-#### Removing or Completing All Tasks
+**Bulk actions**
 
-Clear the entire to-do list or mark all tasks as completed.
-
-```bash
+```
 python todo.py --remove-all
 python todo.py --complete-all
 python todo.py --pending-all
 ```
 
----
+## Contributing
 
-## 🤝 Contributing
+Found a bug or have an idea for a feature? Open an issue or submit a pull request.
 
-Feel free to contribute to this project! If you find a bug or want to add a new feature, please open an issue or submit a pull request.
+## License
+
+MIT License. See [LICENSE](https://github.com/malii0/todo-cli/blob/main/LICENSE) for details.
